@@ -1,0 +1,39 @@
+services:
+  api:
+    build: ./api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./api:/usr/src/api
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=mysql+pymysql://root:password@db:3306/chatbot
+    env_file:
+      - ./api/.env
+
+  ui:
+    build: ./ui
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./ui:/usr/src/ui
+      - /usr/src/ui/node_modules
+    depends_on:
+      - api
+    environment:
+      - API_URL=http://localhost:8000
+
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: chatbot
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
