@@ -94,7 +94,7 @@ cp .env.example .env
 
 - Backend: FastAPI, Python, Pinecone, Gemini, MySQL
 
-- Frontend: React (Vite), TypeScript, MUI
+- Frontend: React (Vite), TypeScript, MUI, React Query, Context API
 
 - Deployment: Docker, AWS (ECS, RDS, Amplify, CloudFront)
 
