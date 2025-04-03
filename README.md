@@ -45,23 +45,7 @@ git clone git@github.com:muiux/fintech-chatbot.git
 cd fintech-chatbot
 ```
 
-### 2. Running with Docker
-
-Ensure you have Docker and Docker Compose installed.
-
-```
-docker compose up --build
-```
-
-This will:
-
-- Start the FastAPI backend on port 8000
-
-- Start the Vite React frontend on port 5173
-
-- Start the MySQL database container
-
-### 3. Environment Variables
+### 2. Environment Variables
 
 #### Backend (api/ Directory)
 
@@ -80,6 +64,22 @@ cp .env.example .env
 ```
 
 2. This file is for local use only and not used in Docker.
+
+### 3. Running with Docker
+
+Ensure you have Docker and Docker Compose installed.
+
+```
+docker compose up --build
+```
+
+This will:
+
+- Start the FastAPI backend on port 8000
+
+- Start the Vite React frontend on port 5173
+
+- Start the MySQL database container
 
 ## API Endpoints
 

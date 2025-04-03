@@ -87,7 +87,6 @@ const ChatInterface: React.FC = () => {
 
     const newChat: ChatQA = { query: newMessage, response: "" };
     setChats((prev) => [newChat, ...prev]);
-    setNewMessage("");
     scrollIntoView();
 
     sendQuery(newMessage, {
@@ -101,6 +100,7 @@ const ChatInterface: React.FC = () => {
   const handleKeyPress = (e: KeyboardEvent) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
+      setNewMessage("");
       handleSend();
     }
   };
