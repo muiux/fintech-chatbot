@@ -11,6 +11,7 @@ interface AuthContextType {
   ) => Promise<void>;
   logout: () => void;
   isSmallScreen: boolean;
+  isMediumScreen: boolean;
   isAuthenticated: boolean;
 }
 

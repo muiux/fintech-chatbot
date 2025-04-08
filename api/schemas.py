@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 class Token(BaseModel):
     access_token: str
@@ -24,9 +25,7 @@ class UserInDB(UserResponse):
 
 class ChatMessageCreate(BaseModel):
     query: str
-
-class ChatMessageResponse(BaseModel):
-    id: str
+    session_id: Optional[str] = None
+    
+class ChatSessionCreate(BaseModel):
     query: str
-    response: str
-    created_at: datetime

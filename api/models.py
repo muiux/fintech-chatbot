@@ -12,7 +12,14 @@ class User(Base, table=True):
 
 class ChatMessage(Base, table=True):
     id: str = Field(default_factory=uuid_pkg.uuid4, primary_key=True)
+    session_id: str = Field(foreign_key="chatsession.id")
     user_id: str = Field(foreign_key="user.id")
     query: str = Field(default=None, max_length=5000)
     response: str = Field(default=None, max_length=10000)
+    created_at: datetime = Field(default_factory=lambda: datetime.now())
+
+class ChatSession(Base, table=True):
+    id: str = Field(default_factory=uuid_pkg.uuid4, primary_key=True)
+    user_id: str = Field(foreign_key="user.id")
+    title: str = Field(default="New Chat")
     created_at: datetime = Field(default_factory=lambda: datetime.now())

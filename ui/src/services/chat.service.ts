@@ -1,10 +1,14 @@
 import api from "./api";
-import { ChatQA } from "../types/types";
+import { ChatMessageCreate, ChatQA } from "../types/types";
 
-const getChatHistory = async (page = 1, pageSize = 5): Promise<ChatQA[]> => {
+const getChatHistory = async (
+  sessionId: string,
+  page = 1,
+  pageSize = 5
+): Promise<ChatQA[]> => {
   try {
     const response = await api.get<ChatQA[]>(
-      `/chat/history?page=${page}&page_size=${pageSize}`
+      `/chat/history/${sessionId}?page=${page}&page_size=${pageSize}`
     );
     return response.data;
   } catch (error) {
@@ -13,9 +17,9 @@ const getChatHistory = async (page = 1, pageSize = 5): Promise<ChatQA[]> => {
   }
 };
 
-const sendQuery = async (query: string): Promise<ChatQA> => {
+const sendQuery = async (chatData: ChatMessageCreate): Promise<ChatQA> => {
   try {
-    const response = await api.post<ChatQA>("/chat", { query });
+    const response = await api.post<ChatQA>("/chat", chatData);
     return response.data;
   } catch (error) {
     console.error("Send query error:", error);

@@ -21,6 +21,16 @@ def generate_answer(query_input):
     )
     
     response = model.generate_content(prompt)
-    print(response.text)
+    
+    return response.text
+
+def summarize_query(query_input):
+    prompt = (
+        "Summarize the following user query into a short, 3-5 word title that clearly describes the main topic. "
+        "Avoid using punctuation or quotes.\n\n"
+        f"Query: \"{query_input}\"\n\nTitle:"
+    )
+    
+    response = model.generate_content(prompt)
     
     return response.text

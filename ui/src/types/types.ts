@@ -22,6 +22,7 @@ export interface RegisterUserData {
 export interface ChatQA {
   id?: string;
   query: string;
+  session_id?: string;
   response: string;
   created_at?: Date;
 }
@@ -31,14 +32,15 @@ export interface DecodedToken {
   sub: string;
 }
 
-export type ProductItem = {
+export interface ChatSession {
   id: number;
   title: string;
-  description: string;
-  category: string;
-  price: number;
-  rating: number;
-  thumbnail: string;
-  brand: string;
-  discountPercentage: number;
-};
+  user_id: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ChatMessageCreate {
+  query: string;
+  session_id?: string;
+}

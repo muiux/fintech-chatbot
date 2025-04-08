@@ -1,0 +1,72 @@
+[
+  {
+    "id": "faq_004",
+    "metadata": {
+      "category": "Payments & Transactions",
+      "text": "How do I add a payment method to my account? You can add a payment method by navigating to the \"Wallet\" or \"Payment Methods\" section in our app or website. From there, select the option to add a bank account or credit/debit card, then enter the required details (such as card number or bank account and routing numbers). For bank accounts, we might ask you to complete a micro-deposit verification or instant bank login for security. Once your payment method is linked and verified, you can use it to add funds or make payments."
+    }
+  },
+  {
+    "id": "faq_012",
+    "metadata": {
+      "category": "Regulations & Compliance",
+      "text": "Why do I need to verify my identity to use your services? Identity verification (often referred to as KYC - Know Your Customer) is required by law for financial services to prevent fraud and money laundering. By verifying your identity with a government-issued ID and sometimes a selfie or other documents, we ensure that it’s really you using the account. This process protects everyone: it helps prevent identity theft, keeps the platform safe from illegal activities, and is mandated by regulators. We only ask for information that is necessary and handle your documents securely and confidentially."
+    }
+  },
+  {
+    "id": "faq_011",
+    "metadata": {
+      "category": "Regulations & Compliance",
+      "text": "Are you regulated or licensed? Yes, we are a regulated financial services provider. We comply with all applicable financial regulations in the regions we operate. For instance, in the United States we operate as a licensed Money Service Business and partner with an FDIC-insured bank for holding customer funds. We also adhere to consumer protection laws and regulatory standards set by authorities like the Financial Crimes Enforcement Network (FinCEN) and other relevant regulatory bodies. This oversight helps ensure we operate safely and reliably."
+    }
+  },
+  {
+    "id": "faq_016",
+    "metadata": {
+      "category": "Technical Support & Troubleshooting",
+      "text": "The app is crashing or not working properly. How can I troubleshoot it? If the app is crashing or acting unstable, try these steps: (1) Close and reopen the app, as it might be a temporary glitch. (2) Ensure you are using the latest version of the app — if not, update it via the App Store or Google Play. (3) If the issue persists, try restarting your device. (4) You can also clear the app cache/data (if you know how, or reinstall the app) to see if that resolves the problem. If none of these steps help, contact our technical support with details about the issue (any error messages, your device model, and OS version) so we can assist further."
+    }
+  },
+  {
+    "id": "faq_013",
+    "metadata": {
+      "category": "Regulations & Compliance",
+      "text": "Are my funds insured or protected by any financial safety nets? Yes, your funds are safeguarded. If your account includes a cash balance, we keep those funds in segregated accounts with partner banks that provide FDIC insurance (for U.S. customers) up to the standard limit (currently $250,000 per depositor). This means if the partner bank were to fail, your money would still be protected up to that amount. For customers outside the U.S., we comply with local regulations to protect customer funds (such as e-money safeguards or deposit insurance schemes where applicable). Note that investments or crypto assets (if offered) may not be insured in the same way, but we will inform you clearly about which funds are covered by insurance."
+    }
+  },
+  {
+    "id": "faq_017",
+    "metadata": {
+      "category": "Technical Support & Troubleshooting",
+      "text": "How can I contact customer support if I need help? You can reach our customer support through multiple channels. The easiest way is via the in-app chat: go to the Help or Support section of our app and send us a message. Alternatively, you can email our support team at support@ourfintech.com or call our support hotline (available Monday to Friday during business hours). We also have an online Help Center with FAQs and guides (like this one) that might answer your question. We're here to help, so don't hesitate to get in touch."
+    }
+  },
+  {
+    "id": "faq_010",
+    "metadata": {
+      "category": "Security & Fraud Prevention",
+      "text": "What should I do if I suspect fraudulent activity on my account? If you notice any unauthorized transactions or suspect your account has been compromised, act quickly. First, use the app to lock or freeze your account (if that feature is available) to prevent further activity. Change your password immediately and enable 2FA if you haven't already. Then, contact our customer support to report the issue so we can investigate and help secure your account. We may guide you through additional steps, such as verifying recent transactions and resetting security details."
+    }
+  },
+  {
+    "id": "faq_009",
+    "metadata": {
+      "category": "Security & Fraud Prevention",
+      "text": "Do you offer two-factor authentication (2FA)? How can I enable it? Yes, we offer two-factor authentication for added security. You can enable 2FA by going to your Account Settings and selecting the security options. From there, turn on two-factor authentication and choose your preferred method (such as an authentication app or SMS codes). Once enabled, each time you log in, you'll need to provide the additional verification code from your device, which helps protect your account even if someone else knows your password."
+    }
+  },
+  {
+    "id": "faq_014",
+    "metadata": {
+      "category": "Technical Support & Troubleshooting",
+      "text": "I'm unable to log in to my account. What should I do? If you're having trouble logging in, first double-check that you're using the correct email/username and password. If you forgot your password, use the \"Forgot Password\" link to reset it — we'll send a reset link or code to your registered email or phone. Make sure your internet connection is stable. If you've tried these steps and still can't log in (for example, if you’re seeing an account lock or error message), contact our customer support for assistance. We may need to verify your identity to help restore access to your account securely."
+    }
+  },
+  {
+    "id": "faq_015",
+    "metadata": {
+      "category": "Technical Support & Troubleshooting",
+      "text": "A transaction I attempted failed or was declined. What should I do next? First, don't panic — if a transaction fails, the funds typically remain in or are returned to your account. Check the transaction details or error message in the app; it might tell you the reason (insufficient balance, network issue, incorrect details, etc.). If the issue was insufficient funds, you may need to add money to your account and try again. For other issues, ensure that the recipient details are correct and that you're within any transaction limits. If everything looks correct but it still fails, please reach out to our support team — we can investigate the issue and guide you on what to do."
+    }
+  }
+]

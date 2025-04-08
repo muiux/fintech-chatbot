@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router";
 import { AuthProvider } from "./contexts/authProvider";
 import Register from "./pages/RegisterPage";
 import Login from "./pages/LoginPage";
-import Chat from "./pages/ChatPage";
+import ChatPage from "./pages/ChatPage";
 import Layout from "./layout/Layout";
 import PrivateRoute from "./routes/PrivateRoute";
 import Home from "./pages/HomePage";
@@ -22,7 +22,11 @@ const App: React.FC = () => {
               <Route path="/login" element={<Login />} />
               <Route
                 path="/chat"
-                element={<PrivateRoute element={<Chat />} />}
+                element={<PrivateRoute element={<ChatPage />} />}
+              />
+              <Route
+                path="/chat/:session_id"
+                element={<PrivateRoute element={<ChatPage />} />}
               />
             </Routes>
           </Box>
